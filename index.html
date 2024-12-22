@@ -40,13 +40,40 @@
                 <p class="masthead-subheading font-weight-light mb-0">Engenharia de Software e Dados</p>
             </div>
         </header>
-        <!-- About Section-->
-        <section class="page-section portfolio mb-0" id="about">
+
+        <!-- Portfolio Section-->
+        <section class="page-section portfolio" id="portfolio">
             <div class="container">
-                <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary">Sobre</h2>
+                <!-- Portfolio Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfólio</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fa-solid fa-code"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Grid Items-->
+                <div class="row justify-content-center">
+                    <!-- Portfolio Item 1-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="dist/assets/img/portfolio/a-viagem-de-jurema/01.jpeg" alt="..." />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section-->
+        <section class="page-section bg-primary text-white mb-0" id="about">
+            <div class="container">
+                <!-- About Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-white">Sobre</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fa-solid fa-code"></i></div>
                     <div class="divider-custom-line"></div>
@@ -57,7 +84,7 @@
                 </div>
                 <!-- About Section Button-->
                 <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-success" href="https://drive.google.com/file/d/19_29lLgMUByZENvY_VR9rOSyk2b6DQ1i/view?usp=sharing">
+                    <a class="btn btn-xl btn-outline-light" href="https://drive.google.com/file/d/19_29lLgMUByZENvY_VR9rOSyk2b6DQ1i/view?usp=sharing">
                         <i class="fas fa-download me-2"></i>
                         Baixar currículo
                     </a>
@@ -131,5 +158,85 @@
         <script>
             document.getElementById('year').textContent = new Date().getFullYear();
         </script>
+        <!-- Portfolio Modals-->
+        <!-- Portfolio Modal 1-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">A Viagem de Jurema</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fa-solid fa-code"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="dist/assets/img/portfolio/a-viagem-de-jurema/01.jpeg" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">"A Viagem de Jurema" é um curta-metragem de ficção que surge das inquietações em torno do processo de ocupação da Amazônia. Ao abordar o cotidiano, o filme evidencia os atravessamentos pessoais e sociais causados pelo "desenvolvimento" desordenado e nos faz um convite para a ação coletiva em prol da Amazônia.</p>
+
+                                    <!-- Gallery -->
+                                    <div class="row">
+                                    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                                        <img
+                                        src="dist/assets/img/portfolio/a-viagem-de-jurema/02.jpeg"
+                                        class="w-100 shadow-1-strong rounded mb-4"
+                                        alt="Boat on Calm Water"
+                                        />
+
+                                        <img
+                                        src="dist/assets/img/portfolio/a-viagem-de-jurema/03.jpeg"
+                                        class="w-100 shadow-1-strong rounded mb-4"
+                                        alt="Wintry Mountain Landscape"
+                                        />
+                                    </div>
+
+                                    <div class="col-lg-4 mb-4 mb-lg-0">
+                                        <img
+                                        src="dist/assets/img/portfolio/a-viagem-de-jurema/04.jpeg"
+                                        class="w-100 shadow-1-strong rounded mb-4"
+                                        alt="Mountains in the Clouds"
+                                        />
+
+                                        <img
+                                        src="dist/assets/img/portfolio/a-viagem-de-jurema/07.jpeg"
+                                        class="w-100 shadow-1-strong rounded mb-4"
+                                        alt="Boat on Calm Water"
+                                        />
+                                    </div>
+
+                                    <div class="col-lg-4 mb-4 mb-lg-0">
+                                        <img
+                                        src="dist/assets/img/portfolio/a-viagem-de-jurema/06.jpeg"
+                                        class="w-100 shadow-1-strong rounded mb-4"
+                                        alt="Waves at Sea"
+                                        />
+
+                                        <img
+                                        src="dist/assets/img/portfolio/a-viagem-de-jurema/05.jpeg"
+                                        class="w-100 shadow-1-strong rounded mb-4"
+                                        alt="Yosemite National Park"
+                                        />
+                                    </div>
+                                    </div>
+                                    <!-- Gallery -->
+
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
