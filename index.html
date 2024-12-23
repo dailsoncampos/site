@@ -107,37 +107,6 @@
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
         <script>
-            document.getElementById('contactForm').addEventListener('submit', function(event) {
-                event.preventDefault();
-        
-                const name = document.getElementById('name').value;
-                const email = document.getElementById('email').value;
-                const phone = document.getElementById('phone').value;
-                const message = document.getElementById('message').value;
-        
-                fetch('caminho/para/send_email.php', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/x-www-form-urlencoded'
-                    },
-                    body: new URLSearchParams({
-                        name: name,
-                        email: email,
-                        phone: phone,
-                        message: message
-                    })
-                })
-                .then(response => response.text())
-                .then(result => {
-                    alert(result);
-                })
-                .catch(error => {
-                    console.error('Erro:', error);
-                    alert('Erro ao enviar a mensagem!');
-                });
-            });
-        </script>
-        <script>
             document.getElementById('year').textContent = new Date().getFullYear();
         </script>
         <!-- Google Tag Manager (noscript) -->
