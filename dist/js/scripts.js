@@ -51,10 +51,4 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
-    // $(document).ready(function(){
-    //     $('.skills-tools').slick({
-    //         setting: setting-value
-    //     });
-    // });
-
 });
