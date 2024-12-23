@@ -77,14 +77,28 @@
         <footer class="footer text-center">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="col-lg-4 mb-5 mb-lg-0">
                         <h4 class="text-uppercase mb-4">Localização</h4>
                         <p class="lead mb-0">
                             Santarém, PA - Brasil
                         </p>
                     </div>
+
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Contato</h4>
+                        <p class="lead mb-0">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>contato@dailsoncampos.tech</span>
+                        </p>
+                        <p class="lead mb-0">
+                            <i class="fab fa-fw fa-whatsapp"></i>
+                            <span>(93) 98437-6492</span>
+                        </p>
+                    </div>
+
+
                     <!-- Footer Social Icons-->
-                    <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="col-lg-4 mb-5 mb-lg-0">
                         <h4 class="text-uppercase mb-4">Redes Sociais</h4>
                         <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/dailsoncampos.tech" target="_blank"><i class="fab fa-fw fa-instagram"></i></a>
                         <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/dailsoncampos/" target="_blank"><i class="fab fa-fw fa-linkedin-in"></i></a>
@@ -101,42 +115,8 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="dist/js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-        <script>
-            document.getElementById('contactForm').addEventListener('submit', function(event) {
-                event.preventDefault();
-        
-                const name = document.getElementById('name').value;
-                const email = document.getElementById('email').value;
-                const phone = document.getElementById('phone').value;
-                const message = document.getElementById('message').value;
-        
-                fetch('caminho/para/send_email.php', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/x-www-form-urlencoded'
-                    },
-                    body: new URLSearchParams({
-                        name: name,
-                        email: email,
-                        phone: phone,
-                        message: message
-                    })
-                })
-                .then(response => response.text())
-                .then(result => {
-                    alert(result);
-                })
-                .catch(error => {
-                    console.error('Erro:', error);
-                    alert('Erro ao enviar a mensagem!');
-                });
-            });
-        </script>
         <script>
             document.getElementById('year').textContent = new Date().getFullYear();
         </script>
