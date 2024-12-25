@@ -11046,40 +11046,29 @@ html {
   background-color: #1a252f;
 }
 
-
-
-
-.multi-item-carousel{
-  .carousel-inner{
-    > .item{
-      transition: 500ms ease-in-out left;
+.multi-item-carousel {
+  .carousel-inner {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    > .item {
+      flex: 0 0 auto;
+      scroll-snap-align: start;
+      transition: transform 500ms ease-in-out;
     }
-    .active{
-      &.left{
-        left:-33%;
-      }
-      &.right{
-        left:33%;
-      }
-    }
-    .next{
-      left: 33%;
-    }
-    .prev{
-      left: -33%;
+    .active {
+      transform: scale(1.05);
     }
     @media all and (transform-3d), (-webkit-transform-3d) {
-      > .item{
-
-        transition: 500ms ease-in-out left;
-        transition: 500ms ease-in-out all;
+      > .item {
         backface-visibility: visible;
-        transform: none!important;
+        transform: none !important;
       }
     }
   }
-  .carouse-control{
-    &.left, &.right{
+  .carousel-control {
+    &.left, &.right {
       background-image: none;
     }
   }
@@ -11087,5 +11076,5 @@ html {
 
 .badge {
   border-radius: 0%;
-  font-size: large
+  font-size: large;
 }
